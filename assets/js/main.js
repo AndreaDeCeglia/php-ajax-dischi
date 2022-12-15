@@ -27,7 +27,7 @@ var app = new Vue({
 
     methods: {
         selectGenre(){
-            axios.get(`./api/index.php?tipo=${this.genre}`)
+            axios.get(`./api/index.php?genre=${this.genre}`)
                 .then((res) => {
                     this.jsonArray = res.data;
                 })

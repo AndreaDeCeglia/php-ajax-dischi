@@ -26,7 +26,7 @@
                     <select v-model="genre" @change="selectGenre">
                         <option 
                             :value="element"
-                            v-for="(element, index) genresArray"
+                            v-for="(element, index) in genresArray"
                         >
                             {{ element }}
                         </option>
