@@ -1,0 +1,740 @@
+/* utilities settings */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid green;
+    border-style: inset; */
+}
+
+.vh100{
+    height: 100vh;
+}
+
+.middle{
+    vertical-align: middle;
+}
+
+/* scrollbar section */
+
+/* body::-webkit-scrollbar {
+    width: 7px;
+    display: none;
+  }
+
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #0061FF;
+    border-radius: 20px;
+  } */
+
+/* various */
+
+.unstyle-list{
+    list-style: none;
+}
+
+.unstyle-a{
+    text-decoration: none;
+}
+
+/* img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+} */
+
+
+
+a, button{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover,
+a:hover{
+    filter: brightness(200%);
+}
+
+.line-height20{
+    line-height: 20px;
+}
+
+.change-arrow{
+    cursor: pointer;
+}
+
+.radius10px{
+    border-radius: 10px;
+}
+
+.radius20px{
+    border-radius: 20px;
+}
+
+/* border */
+
+.border-gray{
+    border: 1px solid gray
+}
+
+.border-b-gray{
+    border-bottom: 1px solid gray;
+}
+
+.border-top-gray{
+    border-top: 1px solid gray;
+}
+
+
+/* margin top */
+
+.margin-top100{
+    margin-top: 100px;
+}
+
+.margin-top80{
+    margin-top: 80px;
+}
+
+.margin-top50{
+    margin-top: 50px;
+}
+
+.margin-top40{
+    margin-top: 40px;
+}
+
+.margin-top30{
+    margin-top: 30px;
+}
+
+.margin-top20{
+    margin-top: 20px;
+}
+
+.margin-top10{
+    margin-top: 10px;
+}
+
+.margin-top1rem{
+    margin-top: 1rem;
+}
+
+.margin-top2rem{
+    margin-top: 2rem;
+}
+
+/* margin bottom */
+
+.margin-bottom20{
+    margin-bottom: 20px;
+}
+
+/* margin padding left right */
+
+.margin-left10{
+    margin-left: 10px;
+}
+
+.margin-left20{
+    margin-left: 20px;
+}
+
+.margin-right10{
+    margin-right: 10px;
+}
+
+.padding-left20{
+    padding-left: 20px;
+}
+
+/* padding top */
+
+.padding-top20{
+    padding-top: 20px;
+}
+
+.padding-top30{
+    padding-top: 30px;
+}
+
+.padding-top40{
+    padding-top: 40px;
+}
+
+.padding-top50{
+    padding-top: 50px;
+}
+
+.padding-top100{
+    padding-top: 100px;
+}
+
+/* padding-bottom */
+
+.padding-bottom20{
+    padding-bottom: 20px;
+}
+
+/* padding % */
+
+.padding-1{
+    padding: 1%;
+}
+
+.padding-2{
+    padding: 2%;
+}
+
+/* margin % */
+
+.margin-1{
+    margin: 1%;
+}
+
+/* margin Xpx 0; */
+
+.margin10-0{
+    margin: 10px 0;
+}
+
+.margin20-0{
+    margin: 20px 0;
+}
+
+.margin30-0{
+    margin: 30px 0;
+}
+
+.margin50-0{
+    margin: 50px 0;
+}
+
+.margin80-0{
+    margin: 80px 0;
+}
+
+.margin100-0{
+    margin: 100px 0;
+}
+
+.margin1rem-0{
+    margin: 1rem 0;
+}
+
+.margin2rem-0{
+    margin: 2rem 0;
+}
+
+/* padding Xpx 0; */
+
+.padding10-0{
+    padding: 10px 0;
+}
+
+.padding20-0{
+    padding: 20px 0;
+}
+
+.padding30-0{
+    padding: 30px 0;
+}
+
+.padding40-0{
+    padding: 40px 0;
+}
+
+.padding50-0{
+    padding: 50px 0;
+}
+
+.padding80-0{
+    padding: 80px 0;
+}
+
+.padding100-0{
+    padding: 100px 0;
+}
+
+/* font size */
+
+.font-size10{
+    font-size: 10px;
+}
+
+.font-size12{
+    font-size: 12px;
+}
+
+.font-size16{
+    font-size: 16px;
+}
+
+.font-size30{
+    font-size: 30px;
+}
+
+.font-size35{
+    font-size: 35px;
+}
+
+.font-size40{
+    font-size: 40px;
+}
+
+/* text align */
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+/* color */
+
+.txt-white{
+    color: white;
+}
+
+.txt-gray{
+    color: gray;
+}
+
+/* inline/inline-block */
+
+.inline-b{
+    display: inline-block;
+}
+
+.inline{
+    display: inline;
+}
+
+/* Position */
+
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.p-absolute-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.p-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* flex settings */
+
+.flex-row{
+    display: flex;
+}
+
+.flex-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.justify-start{
+    justify-content: flex-start;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+.align-stretch{
+    align-items: stretch;
+}
+
+.align-baseline{
+    align-items: baseline;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+/* flex basis */
+
+.basis1-3{
+    flex-basis: calc( 100% / 3 );
+}
+
+.basis2-3{
+    flex-basis: calc( ( 100% / 3 ) * 2 );
+}
+
+.basis1-6{
+    flex-basis: calc( 100% / 6 );
+}
+
+.basis1-7{
+    flex-basis: calc( 100% / 7 );
+}
+
+.basis1-8{
+    flex-basis: calc( 100% / 8 );
+}
+
+.basis1-9{
+    flex-basis: calc( 100% / 9 );
+}
+
+.basis-19{
+    flex-basis: 19%;
+}
+
+.basis-20{
+    flex-basis: 20%;
+}
+
+.basis-29{
+    flex-basis: 29%;
+}
+
+.basis-30{
+    flex-basis: 30%;
+}
+
+.basis-32{
+    flex-basis: 32%;
+}
+
+.basis-39{
+    flex-basis: 39%;
+}
+
+.basis-40{
+    flex-basis: 40%;
+}
+
+.basis-49{
+    flex-basis: 49%;
+}
+
+.basis-50{
+    flex-basis: 50%;
+}
+
+.basis-25{
+    flex-basis: 25%;
+}
+
+.basis-59{
+    flex-basis: 59%;
+}
+
+.basis-60{
+    flex-basis: 60%;
+}
+
+.basis-69{
+    flex-basis: 69%;
+}
+
+.basis-70{
+    flex-basis: 70%;
+}
+
+.basis79{
+    flex-basis: 79%;
+}
+
+.basis80{
+    flex-basis: 80%;
+}
+
+/* flex grow */
+
+.grow1{
+    flex-grow: 1;
+}
+
+.grow2{
+    flex-grow: 2;
+}
+
+/* buttons */
+
+.btn{
+    padding: .8rem 1.5rem;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(150%);
+}
+
+.blue{
+    background-color: #297AFE;
+    color: white;
+}
+
+.white{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* float */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+/* container misures */
+
+.container-90{
+    width: 90%;
+    margin: auto;
+}
+
+.container-80{
+    width: 80%;
+    margin: auto;
+}
+
+.container-70{
+    width: 70%;
+    margin: auto;
+}
+
+.container-60{
+    width: 60%;
+    margin: auto;
+}
+
+.container-55{
+    width: 55%;
+    margin: auto;
+}
+
+.container-50{
+    width: 50%;
+    margin: auto;
+}
+
+.circle-icon {
+    background-color: #ffc0cb;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*
+******************************************
+**** MY BUTTONS **************************
+******************************************
+*/
+
+
+.acid-button{
+    /* font-size: 2rem; */
+    /* display: inline-block; */
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #202531;
+    color: yellowgreen;
+    border: 1px solid yellowgreen;
+    /* padding: 0.25em 1em; */
+    border-radius: 0.25em;
+
+    text-shadow: 0 0 0.125em white,
+    0 0 0.125 currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 yellowgreen,
+    0 0 0.5em 0 yellowgreen;
+
+    position: relative;
+
+    transition: background-color 0.5s;
+}
+
+.acid-button::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background-color: yellowgreen;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(2em);
+    opacity: 0.7;
+}
+
+.acid-button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em yellowgreen;
+    opacity: 1;
+    background-color: yellowgreen;
+    z-index: -1;
+    transition: 1s linear;
+}
+
+.acid-button:hover,
+.acid-button:focus{
+    background-color: yellowgreen;
+    color: #202531;
+    text-shadow: none;
+}
+
+.acid-button:hover::after{
+    opacity: 1;
+}
+
+
+/*
+******************************************
+**** MY TEXTES' CONTAINERS ***************
+******************************************
+*/
+
+
+.acid-text{
+    /* font-size: 2rem; */
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #202531;
+    color: yellowgreen;
+    border: 0.125em solid yellowgreen;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow: 0 0 0.125em white,
+    0 0 0.125 currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 yellowgreen,
+    0 0 0.5em 0 yellowgreen;
+
+    position: relative;
+
+    transition: background-color 0.5s;
+}
+
+
+.acid-text::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background-color: yellowgreen;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(2em);
+    opacity: 0.7;
+}
+
+.acid-text::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em yellowgreen;
+    opacity: 1;
+    background-color: yellowgreen;
+    z-index: -1;
+    transition: 1s linear;
+}
+
+.acid-text:hover,
+.acid-text:focus{
+    background-color: yellowgreen;
+    color: #202531;
+    text-shadow: none;
+}
+
+.acid-text:hover::after{
+    opacity: 1;
+}
