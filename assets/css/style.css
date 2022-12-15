@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app{
+    background-color: #1E2D3B;
+    height: 100vh;
+}
+
+#singleCD{
+    text-align: center;
+    background-color: #2E3A46;
+    aspect-ratio: 1/2;
+}
+
+#singleCD > img{
+    width: 90%;
+    aspect-ratio: 1/1;
+}
+
+#cardBody{
+    height: 50%;
+}

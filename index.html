@@ -18,8 +18,27 @@
 <body>
 
     <div id="app">
-        <div class="container-80 flex-row justify-between align-center wrap padding-2">
-            <div class="basis1-3"></div>
+        <div class="container-80 flex-row justify-center align-center">
+            <div 
+                class="basis1-6 padding-2"
+                v-for="(element, index) in jsonArray"
+                :key="index"
+            >
+                <div id="singleCD" class="padding-2">
+                    <img id="CDimage" class="margin-top10" :src="element.poster" alt="">
+                    <div id="cardBody" class="padding-2 flex-column justify-around">
+                        <h4 class="txt-white">
+                            {{ element.title }}
+                        </h4>
+                        <h5 class="txt-gray">
+                            {{ element.year }}
+                        </h5>
+                        <h6 class="txt-gray">
+                            {{ element.genre }}
+                        </h6>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
