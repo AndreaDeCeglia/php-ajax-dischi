@@ -18,13 +18,30 @@
 <body>
 
     <div id="app">
-        <div class="container-80 flex-row justify-center align-center">
+
+        <header>
+            <div class="container-80 padding-2 flex-row justify-between align-center">
+                <div id="logoContainer"></div>
+                <div id="inputContainer">
+                    <select v-model="genre" @change="selectGenre">
+                        <option 
+                            :value="element"
+                            v-for="(element, index) genresArray"
+                        >
+                            {{ element }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main class="container-80 flex-row justify-center align-center">
             <div 
                 class="basis1-6 padding-2"
                 v-for="(element, index) in jsonArray"
                 :key="index"
             >
-                <div id="singleCD" class="padding-2">
+                <div id="singleCD" class="padding-2 txt-center">
                     <img id="CDimage" class="margin-top10" :src="element.poster" alt="">
                     <div id="cardBody" class="padding-2 flex-column justify-around">
                         <h4 class="txt-white">
@@ -39,7 +56,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
 
      <!-- vue 2 -->
