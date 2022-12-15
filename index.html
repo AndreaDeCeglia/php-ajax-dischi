@@ -21,14 +21,18 @@
 
         <header>
             <div class="container-80 padding-2 flex-row justify-between align-center">
-                <div id="logoContainer"></div>
-                <div id="inputContainer">
-                    <select v-model="genre" @change="selectGenre">
+                <div id="logoContainer">
+                </div>
+                <div id="inputContainer" class="padding-2">
+                    <select v-model="genre" @change="selectGenre" class="padding-2">
                         <option 
                             :value="element"
                             v-for="(element, index) in genresArray"
                         >
                             {{ element }}
+                        </option>
+                        <option value="all">
+                            all genres
                         </option>
                     </select>
                 </div>

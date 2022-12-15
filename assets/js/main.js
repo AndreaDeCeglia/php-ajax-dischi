@@ -4,7 +4,7 @@ var app = new Vue({
     data: {
         jsonArray : [],
         genresArray: [],
-        genre: '',
+        genre: 'all',
     },
 
     mounted(){
@@ -27,10 +27,18 @@ var app = new Vue({
 
     methods: {
         selectGenre(){
-            axios.get(`./api/index.php?genre=${this.genre}`)
+            if(this.genre != 'all'){
+                axios.get(`./api/index.php?genre=${this.genre}`)
                 .then((res) => {
                     this.jsonArray = res.data;
                 })
+            }else{
+                axios.get('./api/index.php')
+                    .then((res) => {
+                        this.jsonArray = res.data;
+                    })
+            }
+            
         }
     }  
 })

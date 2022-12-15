@@ -9,6 +9,18 @@
     height: 100vh;
 }
 
+header{
+    background-color: #2E3A46;
+}
+
+#logoContainer{
+    height: 50px;
+    width: 50px;
+    background-image: url('https://www.citypng.com/public/uploads/small/11661940170irigpjehbgiem38s2xsxehzrjzgrox15bm6vim8ktxgwsxhvna9pgrrcocabmg3itv2d3ewsl1nbnhejsfgorvqvwzdfdxxsdyur.png');
+    background-size: cover;
+}
+
+
 #singleCD{
     background-color: #2E3A46;
     aspect-ratio: 1/2;
